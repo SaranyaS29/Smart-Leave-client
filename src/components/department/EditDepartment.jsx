@@ -49,7 +49,7 @@ export const EditDepartment = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:5000/department/${id}`,
+        `https://smart-leave-server-kmhd.vercel.app/department/${id}`,
         department,
         {
           headers: {

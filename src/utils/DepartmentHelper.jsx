@@ -26,7 +26,7 @@ export const DepartmentButtons = ({ DepId, onDepartmentDelete }) => {
     if (confirm) {
       try {
         const response = await axios.delete(
-          `http://localhost:5000/department/${id}`,
+          `https://smart-leave-server-kmhd.vercel.app/department/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
