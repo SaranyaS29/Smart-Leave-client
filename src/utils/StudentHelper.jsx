@@ -39,7 +39,7 @@ export const fetchDepartments = async () => {
   let departments;
 
   try {
-    const response = await axios.get("https://smart-leave-server-kmhd.vercel.app/department", {
+    const response = await axios.get("https://smart-leave-server.vercel.app/department", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },

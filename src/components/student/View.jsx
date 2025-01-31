@@ -11,7 +11,7 @@ export const View = () => {
         const fetchStudent = async () => {
         
           try {
-            const response = await axios.get(`http://localhost:5000/student/${id}`, {
+            const response = await axios.get(`https://smart-leave-server.vercel.app/student/${id}`, {
               headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`,
               },
@@ -39,7 +39,7 @@ export const View = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <img
-               src= {`http://localhost:5000/public/uploads/${student.userId.profileImage}`}
+               src= {`https://smart-leave-server.vercel.app/public/uploads/${student.userId.profileImage}`}
                 alt="Student Profile"
                 className="rounded-full border w-72"
               />

@@ -10,7 +10,7 @@ export const Detail = () => {
   const fetchLeave = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/leave/detail/${id}`,
+        `https://smart-leave-server.vercel.app/leave/detail/${id}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -34,7 +34,7 @@ export const Detail = () => {
   const changeStatus = async (leaveId, newStatus) => {
     try {
       const response = await axios.put(
-        `http://localhost:5000/leave/${leaveId}`,
+        `https://smart-leave-server.vercel.app/leave/${leaveId}`,
         { status: newStatus },
         {
           headers: {
@@ -63,7 +63,7 @@ export const Detail = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <img
-            src={`http://localhost:5000/public/uploads/${leave.studentId?.userId?.profileImage}`}
+            src={`https://smart-leave-server.vercel.app/public/uploads/${leave.studentId?.userId?.profileImage}`}
             alt="Student Profile"
             className="rounded-full border w-72"
           />

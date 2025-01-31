@@ -11,7 +11,7 @@ export const LeaveList = () => {
   const fetchLeaves = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/leave/${user._id}`,
+        `hhttps://smart-leave-server.vercel.app/leave/${user._id}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

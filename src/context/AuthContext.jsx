@@ -13,7 +13,7 @@ const AuthContext = ({ children }) => {
         const token = localStorage.getItem("token");
         if (token) {
           const response = await axios.get(
-            "https://smart-leave-server-kmhd.vercel.app/auth/verify",
+            "https://smart-leave-server.vercel.app/auth/verify",
             {
               headers: {
                 Authorization: `Bearer ${token}`,

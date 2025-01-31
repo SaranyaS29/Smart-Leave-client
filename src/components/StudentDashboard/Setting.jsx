@@ -25,7 +25,7 @@ export const Setting = () => {
     } else {
       try {
         const response = await axios.put(
-          "http://localhost:5000/setting/change-password",
+          "https://smart-leave-server.vercel.app/setting/change-password",
           setting,
           {
             headers: {

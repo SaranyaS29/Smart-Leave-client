@@ -24,7 +24,7 @@ export const LeaveAdd = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:5000/leave/add`,
+        `https://smart-leave-server.vercel.app/leave/add`,
         leave,
         {
           headers: {

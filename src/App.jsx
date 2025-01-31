@@ -27,7 +27,7 @@ const WelcomeAdmin = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/auth/me", {
+        const response = await axios.get("https://smart-leave-server.vercel.app/auth/me", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

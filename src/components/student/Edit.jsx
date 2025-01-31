@@ -24,7 +24,7 @@ export const Edit = () => {
     const fetchStudent = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/student/${id}`,
+          `https://smart-leave-server.vercel.app/student/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -69,7 +69,7 @@ export const Edit = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/student/${id}`,
+        `https://smart-leave-server.vercel.app/student/${id}`,
         student,
         {
           headers: {

@@ -17,7 +17,7 @@ export const AddDepartment = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://smart-leave-server-kmhd.vercel.app/department/add",
+        "https://smart-leave-server.vercel.app//department/add",
         department,
         {
           headers: {

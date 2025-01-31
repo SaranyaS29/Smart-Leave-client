@@ -33,7 +33,7 @@ export const Add = () => {
     });
     try {
       const response = await axios.post(
-        "http://localhost:5000/student/add",
+        "https://smart-leave-server.vercel.app/student/add",
         formDataObj,
         {
           headers: {
