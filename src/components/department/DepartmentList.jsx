@@ -11,7 +11,7 @@ export const DepartmentList = () => {
 
   const onDepartmentDelete = async (id) => {
     try {
-      const response = await fetch(`https://smart-leave-server.vercel.app//department/${id}`, {
+      const response = await fetch(`https://smart-leave-server.vercel.app/department/${id}`, {
         method: "DELETE",
       });
 
